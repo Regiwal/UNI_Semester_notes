@@ -1,0 +1,183 @@
+/* General Page Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    /* light gray background */
+    color: #333;
+    /* dark gray text */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    /* blue header */
+    padding: 12px 20px;
+    color: white;
+}
+
+/* Logo Section (your pic + text) */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* makes picture circular */
+    object-fit: cover;
+    border: 2px solid white;
+    /* nice border around pic */
+}
+
+.logo span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d1e8ff;
+    /* light blue on hover */
+}
+
+/* subject section */
+
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: scle 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card h3 {
+    margin: 0 0 10px;
+    color: #007BFF;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+
+}
+
+/* subject section end */
+
+
+/* footer start */
+
+footer {
+background-color: #007BFF;
+    /* same blue as header */
+    color: white;
+    padding: 20px 5%;
+    margin-top: 40px;
+
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-left h2 {
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    /* light gray */
+}
+
+.footer-social a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    /* makes icons white */
+    transition: 0.3s;
+}
+
+.footer-social a img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #3b82f6;
+    /* lighter blue line */
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #d1d5db;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}
+
+
+/* footer end */
