@@ -1,0 +1,62 @@
+.weeks {
+    padding: 20px;
+}
+
+.week {
+    background: #f8f9fa;
+    border-left: 5px solid #007BFF;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.week h4 {
+    margin: 0;
+    color: #333;
+}
+h2{
+    text-align: center;
+  
+}
+
+
+/* From Uiverse.io by Creatlydev */
+.button {
+    line-height: 1;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.75em 1em;
+    padding-right: 1.25em;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 700;
+    border-radius: 2em;
+    font-size: 1rem;
+    box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+    transition: transform 0.3s;
+
+    background: linear-gradient(90deg,
+            rgba(0, 123, 255, 1) 0%,
+            rgb(134, 173, 220) 100%);
+}
+
+.button__icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.button:hover {
+    border-color: #f4f5f2;
+    background-color: #087bf5;
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
