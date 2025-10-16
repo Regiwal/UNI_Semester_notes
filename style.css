@@ -148,7 +148,7 @@ background-color: #007BFF;
     width: 25px;
     height: 25px;
     margin-right: 10px;
-    filter: brightness(0) invert(1);
+    /* filter: brightness(0) invert(1); */
     /* makes icons white */
     transition: 0.3s;
 }
